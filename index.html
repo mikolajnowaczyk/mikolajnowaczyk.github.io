@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Mikołaj Nowaczyk</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <button class="haburger-icon" id="hamburger" aria-label="hamburger menu icon">
+      <div class="haburger-bar1"></div>
+      <div class="haburger-bar2"></div>
+      <div class="haburger-bar3"></div>
+    </button>
+  </header>
+  <div class="dropdown">
+    <button class="navigation-item" id="homeBtn">Home</button>
+    <button class="navigation-item" id="skillsBtn">Skills</button>
+    <button class="navigation-item" id="projectsBtn">Projects</button>
+    <button class="navigation-item" id="educationBtn">Education</button>
+    <button class="navigation-item" id="contactBtn">Contact</button>
+  </div>
+  <main>
+    <div class="hero-wrapper" data-section>
+      <div class="hero">
+        <div>
+          <span id="herotext"></span>
+          <span id="caret1" class="caret">|</span>
+        </div>
+        <div>
+          <span id="herodescription"></span>
+          <span id="caret2" class="caret">|</span>
+        </div>
+      </div>
+      <div class="svg-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+          <path fill="rgba(0, 43, 195, 1)" fill-opacity="1"
+            d="M0,32L26.7,48C53.3,64,107,96,160,101.3C213.3,107,267,85,320,96C373.3,107,427,149,480,154.7C533.3,160,587,128,640,101.3C693.3,75,747,53,800,69.3C853.3,85,907,139,960,160C1013.3,181,1067,171,1120,186.7C1173.3,203,1227,245,1280,240C1333.3,235,1387,181,1413,154.7L1440,128L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
+            shape-rendering="crispEdges">
+          </path>
+        </svg>
+      </div>
+    </div>
+    <div class="skills-wrapper" data-section>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+        <path fill="rgba(0, 43, 195, 1)" fill-opacity="1"
+          d="M0,96L24,117.3C48,139,96,181,144,170.7C192,160,240,96,288,96C336,96,384,160,432,165.3C480,171,528,117,576,112C624,107,672,149,720,181.3C768,213,816,235,864,208C912,181,960,107,1008,90.7C1056,75,1104,117,1152,117.3C1200,117,1248,75,1296,74.7C1344,75,1392,117,1416,138.7L1440,160L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"
+          shape-rendering="crispEdges">
+        </path>
+      </svg>
+      <span id="skillsTitle">Programming</span>
+      <div class="skills">
+        <div class="skill">HTML5</div>
+        <div class="skill">CSS3</div>
+        <div class="skill">Sass</div>
+        <div class="skill">JavaScript ES6+</div>
+        <div class="skill">React</div>
+        <div class="skill">React Router</div>
+        <div class="skill">Redux</div>
+        <div class="skill">Axios</div>
+      </div>
+      <span id="skillsTitle">Tools</span>
+      <div class="skills">
+        <div class="skill">git</div>
+        <div class="skill">npm</div>
+        <div class="skill">VS Code</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>Footer</footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

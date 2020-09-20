@@ -14,14 +14,12 @@ header {
   display: flex;
   justify-content: center;
   z-index: 9;
-  background: linear-gradient(
-    90deg,
-    rgba(2, 9, 41, 1) 0%,
-    rgba(0, 43, 195, 1) 25%,
-    rgba(1, 23, 114, 1) 50%,
-    rgba(0, 43, 195, 1) 75%,
-    rgba(2, 9, 41, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(2, 9, 41, 1) 0%,
+      rgba(0, 43, 195, 1) 25%,
+      rgba(1, 23, 114, 1) 50%,
+      rgba(0, 43, 195, 1) 75%,
+      rgba(2, 9, 41, 1) 100%);
   position: sticky;
   top: 0;
   height: 65px;
@@ -97,9 +95,9 @@ header {
     }
   }
 
-  @media (max-width: 700px) {
-    display: none;
-  }
+  // @media (max-width: 700px) {
+  //   display: none;
+  // }
 }
 
 .haburger-icon {
@@ -180,6 +178,12 @@ svg {
   text-align: center;
   font-size: 3rem;
   font-weight: 700;
+
+  & h1 {
+    margin: 0;
+    font-size: 5rem;
+    font-weight: 700;
+  }
 }
 
 .skills {
@@ -187,6 +191,7 @@ svg {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .skill {
@@ -194,7 +199,79 @@ svg {
   margin: 10px;
   padding: 10px;
   border-radius: 15px;
-  border: $base-color 2px solid;
+  border: $base-color 3px solid;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: $base-color;
+  }
+
+  &:hover img {
+    transform: rotateY(360deg);
+  }
+
+  & img {
+    max-width: 100px;
+    max-height: 100px;
+    transition-duration: 0.65s;
+  }
+
+  & .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+
+  &:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  & .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+}
+
+.projects {
+  & h1 {
+    font-weight: 700;
+    font-size: 5rem;
+    text-align: center;
+  }
+}
+
+.project {
+  border: 2px yellowgreen solid;
+  display: flex;
+
+  & .title {
+    text-align: center;
+  }
+
+  & img {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 footer {

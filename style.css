@@ -112,12 +112,6 @@ header {
   opacity: 1;
 }
 
-@media (max-width: 700px) {
-  .navigation-item {
-    display: none;
-  }
-}
-
 .haburger-icon {
   border: none;
   padding: 10px;
@@ -207,6 +201,12 @@ svg {
   font-weight: 700;
 }
 
+.skills-wrapper h1 {
+  margin: 0;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
 .skills {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -219,6 +219,7 @@ svg {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .skill {
@@ -226,7 +227,87 @@ svg {
   margin: 10px;
   padding: 10px;
   border-radius: 15px;
-  border: #002bc3 2px solid;
+  border: #002bc3 3px solid;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skill:hover {
+  background-color: #002bc3;
+}
+
+.skill:hover img {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
+.skill img {
+  max-width: 100px;
+  max-height: 100px;
+  -webkit-transition-duration: 0.65s;
+          transition-duration: 0.65s;
+}
+
+.skill .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.skill:hover .tooltiptext {
+  visibility: visible;
+}
+
+.skill .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.projects h1 {
+  font-weight: 700;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.project {
+  border: 2px yellowgreen solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.project .title {
+  text-align: center;
+}
+
+.project img {
+  width: 150px;
+  height: 150px;
 }
 
 footer {

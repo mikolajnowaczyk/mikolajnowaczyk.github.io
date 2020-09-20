@@ -14,7 +14,7 @@ navs.forEach((element, index) => {
   element.addEventListener("click", () => {
     dropdown.classList.toggle("dropdown-active");
     sections[index].scrollIntoView({
-      block: "center",
+      block: "start",
       behavior: "smooth"
     })
   })
@@ -68,7 +68,7 @@ const typingDescriptionWaiting = setInterval(() => {
             clearInterval(caret2TogglingIndex);
             caretDescription.classList.remove("active");
           }, 1300);
-        } //
+        }
       }, 100);
     }, 1500);
     clearInterval(typingDescriptionWaiting);

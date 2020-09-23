@@ -1,14 +1,16 @@
 html {
   width: 100%;
   font-family: "Lato", sans-serif;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
-  height: 1000vh;
+  height: 0;
 }
 
 header {
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,21 +20,14 @@ header {
   z-index: 9;
   background: -webkit-gradient(linear, left top, right top, from(#020929), color-stop(25%, #002bc3), color-stop(50%, #011772), color-stop(75%, #002bc3), to(#020929));
   background: linear-gradient(90deg, #020929 0%, #002bc3 25%, #011772 50%, #002bc3 75%, #020929 100%);
-  position: -webkit-sticky;
-  position: sticky;
   top: 0;
   height: 65px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media (max-width: 700px) {
-  header {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
+  width: 100vw;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .dropdown {
@@ -56,7 +51,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #011772;
-  height: calc(100vh);
+  height: 100vh;
   width: 100vw;
   z-index: 10;
 }
@@ -185,7 +180,7 @@ header {
 
 .svg-wave {
   opacity: 1;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   bottom: 0;
   z-index: 2;
@@ -228,8 +223,8 @@ svg {
   padding: 10px;
   border-radius: 15px;
   border: #002bc3 3px solid;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,27 +285,173 @@ svg {
 
 .projects h1 {
   font-weight: 700;
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
 }
 
 .project {
-  border: 2px yellowgreen solid;
+  border-top: 3px #002bc3 dashed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  flex-direction: column-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.project .title {
-  text-align: center;
+.project .content {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.project .content .title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin: 15px auto;
+}
+
+.project .content .description {
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin: 15px auto;
+  text-align: justify;
+}
+
+.project .content .technologies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.project .content .technologies .skill {
+  width: 100px;
+  height: 100px;
 }
 
 .project img {
-  width: 150px;
-  height: 150px;
+  margin: 0 auto;
+  padding: 50px;
+  width: 250px;
+  height: 250px;
+}
+
+.form {
+  border-radius: 10px;
+  border: 2px solid #002bc3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px;
+  padding-bottom: 25px;
+}
+
+.form p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.form label {
+  padding: 0px 20px;
+}
+
+.form input {
+  border-radius: 5px;
+  margin: 10px 20px;
+  padding: 5px;
+}
+
+.form textarea {
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px 20px;
+  height: 200px;
+}
+
+.form button {
+  margin: 10px 20px;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  background-color: #002bc3;
+  -webkit-animation: hoveranimation 1s;
+          animation: hoveranimation 1s;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.form button:hover {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@-webkit-keyframes hoveranimation {
+  0% {
+    -webkit-box-shadow: 0px 0px 0px 0px #002bc3;
+            box-shadow: 0px 0px 0px 0px #002bc3;
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 3px 5px #0031dd;
+            box-shadow: 0px 0px 3px 5px #0031dd;
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 0px 0px #002bc3;
+            box-shadow: 0px 0px 0px 0px #002bc3;
+  }
+}
+
+@keyframes hoveranimation {
+  0% {
+    -webkit-box-shadow: 0px 0px 0px 0px #002bc3;
+            box-shadow: 0px 0px 0px 0px #002bc3;
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 3px 5px #0031dd;
+            box-shadow: 0px 0px 3px 5px #0031dd;
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 0px 0px #002bc3;
+            box-shadow: 0px 0px 0px 0px #002bc3;
+  }
 }
 
 footer {
-  border: 5px red solid;
+  padding: 7px 0;
+  text-align: center;
+  color: white;
+  background-color: #0029b9;
 }
 /*# sourceMappingURL=style.css.map */

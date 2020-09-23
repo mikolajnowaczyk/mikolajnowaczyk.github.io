@@ -3,31 +3,32 @@ $base-color: rgba(0, 43, 195, 1);
 html {
   width: 100%;
   font-family: "Lato", sans-serif;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
-  height: 1000vh;
+  height: 0;
 }
 
 header {
+  position: fixed;
   display: flex;
   justify-content: center;
   z-index: 9;
-  background: linear-gradient(90deg,
-      rgba(2, 9, 41, 1) 0%,
-      rgba(0, 43, 195, 1) 25%,
-      rgba(1, 23, 114, 1) 50%,
-      rgba(0, 43, 195, 1) 75%,
-      rgba(2, 9, 41, 1) 100%);
-  position: sticky;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 9, 41, 1) 0%,
+    rgba(0, 43, 195, 1) 25%,
+    rgba(1, 23, 114, 1) 50%,
+    rgba(0, 43, 195, 1) 75%,
+    rgba(2, 9, 41, 1) 100%
+  );
   top: 0;
   height: 65px;
   align-items: center;
-
-  @media (max-width: 700px) {
-    justify-content: flex-end;
-  }
+  width: 100vw;
+  transition: 0.3s;
 }
 
 .dropdown {
@@ -42,7 +43,7 @@ header {
   align-items: center;
   justify-content: center;
   background-color: rgba(1, 23, 114, 1);
-  height: calc(100vh);
+  height: 100vh;
   width: 100vw;
   z-index: 10;
 }
@@ -94,10 +95,6 @@ header {
       opacity: 1;
     }
   }
-
-  // @media (max-width: 700px) {
-  //   display: none;
-  // }
 }
 
 .haburger-icon {
@@ -164,7 +161,7 @@ header {
 
 .svg-wave {
   opacity: 1;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   bottom: 0;
   z-index: 2;
@@ -200,8 +197,8 @@ svg {
   padding: 10px;
   border-radius: 15px;
   border: $base-color 3px solid;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -255,25 +252,124 @@ svg {
 .projects {
   & h1 {
     font-weight: 700;
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
   }
 }
 
 .project {
-  border: 2px yellowgreen solid;
+  border-top: 3px $base-color dashed;
   display: flex;
+  flex-direction: row;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
 
-  & .title {
-    text-align: center;
+  & .content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & .title {
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin: 15px auto;
+    }
+
+    & .description {
+      font-weight: 700;
+      font-size: 1.7rem;
+      margin: 15px auto;
+      text-align: justify;
+    }
+
+    & .technologies {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
+
+      & .skill {
+        width: 100px;
+        height: 100px;
+      }
+    }
   }
 
   & img {
-    width: 150px;
-    height: 150px;
+    margin: 0 auto;
+    padding: 50px;
+    width: 250px;
+    height: 250px;
+  }
+}
+
+.form {
+  border-radius: 10px;
+  border: 2px solid $base-color;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding-bottom: 25px;
+
+  & p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  & label {
+    padding: 0px 20px;
+  }
+
+  & input {
+    border-radius: 5px;
+    margin: 10px 20px;
+    padding: 5px;
+  }
+
+  & textarea {
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 20px;
+    height: 200px;
+  }
+
+  & button {
+    margin: 10px 20px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    background-color: $base-color;
+    animation: hoveranimation 1s;
+    animation-play-state: paused;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  }
+
+  & button:hover {
+    animation-play-state: running;
+  }
+
+  @keyframes hoveranimation {
+    0% {
+      box-shadow: 0px 0px 0px 0px $base-color;
+    }
+    50% {
+      box-shadow: 0px 0px 3px 5px lighten($color: $base-color, $amount: 5);
+    }
+    100% {
+      box-shadow: 0px 0px 0px 0px $base-color;
+    }
   }
 }
 
 footer {
-  border: 5px red solid;
+  padding: 7px 0;
+  text-align: center;
+  color: white;
+  background-color: darken($color: $base-color, $amount: 2);
 }

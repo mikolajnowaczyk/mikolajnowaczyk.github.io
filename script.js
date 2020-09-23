@@ -6,7 +6,8 @@ function toggleHamburger() {
   dropdown.classList.toggle("dropdown-active");
 }
 hamburger.addEventListener("click", toggleHamburger);
-//Scrolling
+
+//Scrolling to the selected section
 const navs = document.querySelectorAll(".navigation-item");
 const sections = document.querySelectorAll("[data-section]");
 
@@ -19,6 +20,22 @@ navs.forEach((element, index) => {
     })
   })
 });
+
+//showing/hiding menu on scroll
+let prevScrollpos = window.pageYOffset;
+let header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+  let currentScrollPos = window.pageYOffset;
+  console.log(prevScrollpos, currentScrollPos);
+
+  if (prevScrollpos > currentScrollPos) {
+    header.style.top = "0";
+  } else {
+    header.style.top = "-70px";
+  }
+  prevScrollpos = currentScrollPos;
+})
 
 //Hero text
 const heroNameSpan = document.getElementById("herotext");

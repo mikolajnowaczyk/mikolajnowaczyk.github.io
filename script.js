@@ -42,7 +42,7 @@ const heroNameSpan = document.getElementById("herotext");
 const heroDescriptionSpan = document.getElementById("herodescription");
 const caretName = document.getElementById("caret1");
 const caretDescription = document.getElementById("caret2");
-const heroTexts = ["Mikołaj Nowaczyk", "Junior Frontend Developer"];
+const heroTexts = ["Mikołaj Nowaczyk", "Frontend Developer"];
 
 const caret1TogglingIndex = setInterval(() => {
   caretName.classList.toggle("active");

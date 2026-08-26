@@ -1,231 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Mikołaj Nowaczyk</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-</head>
-
-<body>
-  <header>
-    <button class="haburger-icon" id="hamburger" aria-label="hamburger menu icon">
-      <div class="haburger-bar1"></div>
-      <div class="haburger-bar2"></div>
-      <div class="haburger-bar3"></div>
-    </button>
-  </header>
-  <div class="dropdown">
-    <button class="navigation-item" id="homeBtn">Home</button>
-    <button class="navigation-item" id="skillsBtn">Skills</button>
-    <button class="navigation-item" id="projectsBtn">Projects</button>
-    <button class="navigation-item" id="educationBtn">Education</button>
-    <button class="navigation-item" id="contactBtn">Contact</button>
-  </div>
-  <main>
-    <div class="hero-wrapper" data-section>
-      <div class="hero">
-        <div>
-          <span id="herotext"></span>
-          <span id="caret1" class="caret">|</span>
-        </div>
-        <div>
-          <span id="herodescription"></span>
-          <span id="caret2" class="caret">|</span>
-        </div>
-      </div>
-      <div class="svg-wave">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
-          <path fill="rgba(0, 43, 195, 1)" fill-opacity="1"
-            d="M0,32L26.7,48C53.3,64,107,96,160,101.3C213.3,107,267,85,320,96C373.3,107,427,149,480,154.7C533.3,160,587,128,640,101.3C693.3,75,747,53,800,69.3C853.3,85,907,139,960,160C1013.3,181,1067,171,1120,186.7C1173.3,203,1227,245,1280,240C1333.3,235,1387,181,1413,154.7L1440,128L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
-            shape-rendering="crispEdges">
-          </path>
-        </svg>
-      </div>
-    </div>
-    <!-- end of hero -->
-    <div class="skills-wrapper" data-section>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
-        <path fill="rgba(0, 43, 195, 1)" fill-opacity="1"
-          d="M0,96L24,117.3C48,139,96,181,144,170.7C192,160,240,96,288,96C336,96,384,160,432,165.3C480,171,528,117,576,112C624,107,672,149,720,181.3C768,213,816,235,864,208C912,181,960,107,1008,90.7C1056,75,1104,117,1152,117.3C1200,117,1248,75,1296,74.7C1344,75,1392,117,1416,138.7L1440,160L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"
-          shape-rendering="crispEdges">
-        </path>
-      </svg>
-      <h1>Skills</h1>
-      <span id="skillsTitle">Programming</span>
-      <div class="skills">
-        <div class="skill">
-          <span class="tooltiptext">Html5</span>
-          <img src="img/skills/html5.png" />
-        </div>
-        <div class="skill">
-          <span class="tooltiptext">Css3</span>
-          <img src="img/skills/css3.png" />
-        </div>
-        <div class="skill">
-          <span class="tooltiptext">Sass</span>
-          <img src="img/skills/sass.png" />
-        </div>
-        <div class="skill">
-          <span class="tooltiptext">Js es6</span>
-          <img src="img/skills/js.png" />
-        </div>
-        <div class="skill">
-          <span class="tooltiptext">React</span>
-          <img src="img/skills/react.png" />
-        </div>
-        <div class="skill">
-          <span class="tooltiptext">Redux</span>
-          <img src="img/skills/redux.png" />
-        </div>
-        <div class="skill">
-          <span class="tooltiptext">React Router</span>
-          <img src="img/skills/react-router-logo.png" />
-        </div>
-      </div>
-      <span id="skillsTitle">Tools</span>
-      <div class="skills">
-        <div class="skill">
-          <span class="tooltiptext">Github</span>
-          <img src="img/skills/github.png" />
-        </div>
-        <div class="skill">
-          <span class="tooltiptext">npm</span>
-          <img src="img/skills/npm.png" />
-        </div>
-        <div class="skill">
-          <span class="tooltiptext">VS Code</span>
-          <img src="img/skills/vscode.png" />
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
-        <path fill="rgba(0, 43, 195, 1)" fill-opacity="1"
-          d="M0,32L0,128L36.9,128L36.9,0L73.8,0L73.8,256L110.8,256L110.8,192L147.7,192L147.7,224L184.6,224L184.6,224L221.5,224L221.5,96L258.5,96L258.5,128L295.4,128L295.4,160L332.3,160L332.3,32L369.2,32L369.2,224L406.2,224L406.2,32L443.1,32L443.1,64L480,64L480,128L516.9,128L516.9,32L553.8,32L553.8,64L590.8,64L590.8,160L627.7,160L627.7,192L664.6,192L664.6,256L701.5,256L701.5,192L738.5,192L738.5,64L775.4,64L775.4,192L812.3,192L812.3,224L849.2,224L849.2,224L886.2,224L886.2,288L923.1,288L923.1,96L960,96L960,224L996.9,224L996.9,224L1033.8,224L1033.8,288L1070.8,288L1070.8,256L1107.7,256L1107.7,32L1144.6,32L1144.6,96L1181.5,96L1181.5,224L1218.5,224L1218.5,288L1255.4,288L1255.4,64L1292.3,64L1292.3,288L1329.2,288L1329.2,224L1366.2,224L1366.2,128L1403.1,128L1403.1,192L1440,192L1440,320L1403.1,320L1403.1,320L1366.2,320L1366.2,320L1329.2,320L1329.2,320L1292.3,320L1292.3,320L1255.4,320L1255.4,320L1218.5,320L1218.5,320L1181.5,320L1181.5,320L1144.6,320L1144.6,320L1107.7,320L1107.7,320L1070.8,320L1070.8,320L1033.8,320L1033.8,320L996.9,320L996.9,320L960,320L960,320L923.1,320L923.1,320L886.2,320L886.2,320L849.2,320L849.2,320L812.3,320L812.3,320L775.4,320L775.4,320L738.5,320L738.5,320L701.5,320L701.5,320L664.6,320L664.6,320L627.7,320L627.7,320L590.8,320L590.8,320L553.8,320L553.8,320L516.9,320L516.9,320L480,320L480,320L443.1,320L443.1,320L406.2,320L406.2,320L369.2,320L369.2,320L332.3,320L332.3,320L295.4,320L295.4,320L258.5,320L258.5,320L221.5,320L221.5,320L184.6,320L184.6,320L147.7,320L147.7,320L110.8,320L110.8,320L73.8,320L73.8,320L36.9,320L36.9,320L0,320L0,320Z"
-          shape-rendering="crispEdges">
-        </path>
-      </svg>
-    </div>
-    <!-- end of skills -->
-    <div class="projects">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="rgba(0, 43, 195, 1)" fill-opacity="1"
-          d="M0,64L0,224L36.9,224L36.9,32L73.8,32L73.8,64L110.8,64L110.8,256L147.7,256L147.7,128L184.6,128L184.6,64L221.5,64L221.5,256L258.5,256L258.5,288L295.4,288L295.4,320L332.3,320L332.3,32L369.2,32L369.2,224L406.2,224L406.2,96L443.1,96L443.1,224L480,224L480,64L516.9,64L516.9,64L553.8,64L553.8,288L590.8,288L590.8,256L627.7,256L627.7,160L664.6,160L664.6,288L701.5,288L701.5,128L738.5,128L738.5,160L775.4,160L775.4,128L812.3,128L812.3,192L849.2,192L849.2,160L886.2,160L886.2,256L923.1,256L923.1,160L960,160L960,32L996.9,32L996.9,64L1033.8,64L1033.8,288L1070.8,288L1070.8,128L1107.7,128L1107.7,128L1144.6,128L1144.6,32L1181.5,32L1181.5,224L1218.5,224L1218.5,128L1255.4,128L1255.4,64L1292.3,64L1292.3,96L1329.2,96L1329.2,64L1366.2,64L1366.2,192L1403.1,192L1403.1,320L1440,320L1440,0L1403.1,0L1403.1,0L1366.2,0L1366.2,0L1329.2,0L1329.2,0L1292.3,0L1292.3,0L1255.4,0L1255.4,0L1218.5,0L1218.5,0L1181.5,0L1181.5,0L1144.6,0L1144.6,0L1107.7,0L1107.7,0L1070.8,0L1070.8,0L1033.8,0L1033.8,0L996.9,0L996.9,0L960,0L960,0L923.1,0L923.1,0L886.2,0L886.2,0L849.2,0L849.2,0L812.3,0L812.3,0L775.4,0L775.4,0L738.5,0L738.5,0L701.5,0L701.5,0L664.6,0L664.6,0L627.7,0L627.7,0L590.8,0L590.8,0L553.8,0L553.8,0L516.9,0L516.9,0L480,0L480,0L443.1,0L443.1,0L406.2,0L406.2,0L369.2,0L369.2,0L332.3,0L332.3,0L295.4,0L295.4,0L258.5,0L258.5,0L221.5,0L221.5,0L184.6,0L184.6,0L147.7,0L147.7,0L110.8,0L110.8,0L73.8,0L73.8,0L36.9,0L36.9,0L0,0L0,0Z"
-          shape-rendering="crispEdges">
-        </path>
-      </svg>
-      <h1>Projects</h1>
-      <div class="projects">
-        <div class="project"></div>
-        <div class="project">
-          <div class="content">
-            <p class="title">Project Title 1</p>
-            <p class="description">Project Description Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloribus corrupti voluptas, ratione dolores eum aliquam magni ex beatae sint deleniti doloremque. Maiores
-              nostrum qui exercitationem omnis quidem tempora in nobis.</p>
-            <div class="technologies">
-              <div class="skill">
-                <span class="tooltiptext">Html5</span>
-                <img src="img/skills/html5.png" />
-              </div>
-              <div class="skill">
-                <span class="tooltiptext">Css3</span>
-                <img src="img/skills/css3.png" />
-              </div>
-              <div class="skill">
-                <span class="tooltiptext">Css3</span>
-                <img src="img/skills/js.png" />
-              </div>
-              <div class="skill">
-                <span class="tooltiptext">Css3</span>
-                <img src="img/skills/react.png" />
-              </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="CV of Mikołaj Nowaczyk, QA Engineer." />
+    <title>Mikołaj Nowaczyk | QA Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button class="print-button" type="button" onclick="window.print()">Download / print PDF</button>
+    <main class="cv" aria-label="Curriculum vitae">
+      <section class="page page-one">
+        <header class="intro">
+          <img class="portrait" src="img/profile.jpg" alt="Mikołaj Nowaczyk" />
+          <div class="identity">
+            <h1>Mikołaj Nowaczyk</h1>
+            <address>
+              <a href="tel:+48662542119"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.6 2.5h3l1.5 4.2-2 1.7c1.2 2.3 3 4.1 5.3 5.3l1.7-2 4.2 1.5v3c0 1-.8 1.8-1.8 1.8C9.7 18.5 5.5 14.3 5.5 5.5c0-1 .1-1.8 1.1-3Z" /></svg> +48 662 542 119</a>
+              <a href="mailto:mikolaj.nowaczyk95@gmail.com"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 5h18v14H3V5Zm2.1 2 6.9 5.4L18.9 7H5.1Zm13.8 10V9.5L12 14.8 5.1 9.5V17h13.8Z" /></svg> mikolaj.nowaczyk95@gmail.com</a>
+              <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m2 11 10-8 10 8v10h-7v-6h-6v6H2V11Zm3 8h2v-6h10v6h2v-7L12 6.4 5 12v7Z" /></svg> Bydgoszcz, Poland</span>
+            </address>
           </div>
-          <img src="img/skills/html5.png" />
-        </div>
-        <div class="project">
-          <div class="content">
-            <p class="title">Project Title 2</p>
-            <p class="description">Project Description Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Doloribus corrupti voluptas, ratione dolores eum aliquam magni ex beatae sint deleniti doloremque. Maiores
-              nostrum qui exercitationem omnis quidem tempora in nobis.</p>
-            <div class="technologies">
-              <div class="skill">
-                <span class="tooltiptext">Html5</span>
-                <img src="img/skills/html5.png" />
-              </div>
-              <div class="skill">
-                <span class="tooltiptext">Css3</span>
-                <img src="img/skills/css3.png" />
-              </div>
-              <div class="skill">
-                <span class="tooltiptext">Css3</span>
-                <img src="img/skills/js.png" />
-              </div>
-              <div class="skill">
-                <span class="tooltiptext">Css3</span>
-                <img src="img/skills/react.png" />
-              </div>
-            </div>
-          </div>
-          <img src="img/skills/html5.png" />
-        </div>
-      </div>
-      <div class="project">
-        <div class="content">
-          <p class="title">Project Title 3</p>
-          <p class="description">Project Description Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Doloribus corrupti voluptas, ratione dolores eum aliquam magni ex beatae sint deleniti doloremque. Maiores
-            nostrum qui exercitationem omnis quidem tempora in nobis.</p>
-          <div class="technologies">
-            <div class="skill">
-              <span class="tooltiptext">Html5</span>
-              <img src="img/skills/html5.png" />
-            </div>
-            <div class="skill">
-              <span class="tooltiptext">Css3</span>
-              <img src="img/skills/css3.png" />
-            </div>
-            <div class="skill">
-              <span class="tooltiptext">Css3</span>
-              <img src="img/skills/js.png" />
-            </div>
-            <div class="skill">
-              <span class="tooltiptext">Css3</span>
-              <img src="img/skills/react.png" />
-            </div>
-          </div>
-        </div>
-        <img src="img/skills/html5.png" />
-      </div>
-    </div>
-    <!-- end of project -->
-    <div class="contact">
-      <div class="social-links">
-        <p>Media społecznościowe</p>
-        <span>FB</span>
-        <span>GH</span>
-        <span>MAIL</span>
-      </div>
-      <form class="form">
-        <p>Formularz kontaktowy</p>
-        <label for="form__name">Imię i nazwisko:</label>
-        <input placeholder="Imię i nazwisko" id="form__name" />
-        <label for="form__email">Adres Email:</label>
-        <input placeholder=" Adres email" id="form__email" />
-        <label for="form__subject">Temat wiadomości:</label>
-        <input placeholder="Temat" id="form__subject" />
-        <label for="form__text">Wiadomość:</label>
-        <textarea placeholder="Treść wiadomości..." id="form__text"></textarea>
-        <button type="submit">Wyślij</button>
-      </form>
-    </div>
-  </main>
-
-  <footer>Created by Mikołaj Nowaczyk</footer>
-  <script src="script.js"></script>
-</body>
-
+        </header>
+        <section class="cv-section education">
+          <h2>Education</h2>
+          <div class="timeline-row"><aside><strong>2014 - 2020</strong><span>Poznań University of Technology</span></aside><div><ul><li>M.Sc. Automation and Robotics; science article co-author: <a href="#">LINK</a></li><li>English - B2 level - ACERT certification</li><li>ISTQB - Foundation Level</li></ul></div></div>
+        </section>
+        <section class="cv-section experience">
+          <h2>Experience</h2>
+          <article class="timeline-row employer"><aside><strong>06.2026 - currently</strong><strong>11.2023 - 05.2026</strong><span>Shiji Poland</span></aside><div class="role"><div class="role-history"><h3>Senior QA Engineer</h3><h3>QA Engineer</h3></div><p>Promoted to Senior QA Engineer in June 2026. Continuing work in the inventory team for a hospitality industry product with 6 people in an Agile methodology. Our product provides a solution for hotel chains management.</p><ul><li>Tech stack: C# + Playwright + SpecFlow | PostgreSQL | AWS | GitLab | TestRail</li><li>Test level: Component | UI | System | Manual</li><li>Deployment: Internal QA app - CI/CD Pipeline</li><li>OS / Env: Windows + WSL + Docker</li><li>Methodology: Agile</li></ul></div></article>
+          <article class="timeline-row"><aside><strong>02.2023 - 10.2023</strong><span>Sii Poland<br />Rockwell Automation<br />(client)</span></aside><div class="role"><h3>Test development engineer</h3><p>Working with a 15-person team on IoT solutions for the industrial sector. The solution included Rockwell Automation communication with various devices like PLCs to send data to a cloud or other endpoint in the form of a predefined model.</p><ul><li>Tech stack: TypeScript + TestCafe + Cucumber-JS | MSSQL | MQTT | InfluxDB | Azure | GitLab</li><li>Test level: Component | UI | System | Manual</li><li>Deployment: Jenkins CI/CD Pipeline</li><li>Cloud services: Azure (Key Vault, App Config, Storage, Cache for Redis, SQL, IoT Hub, Event Grid)</li><li>OS / Env: Windows + VMware | Allen-Bradley Hardware (e.g. ControlLogix PLC)</li><li>Methodology: Agile (SAFe + Kanban)</li></ul></div></article>
+          <article class="timeline-row"><aside><strong>04.2020 - 01.2023</strong><span>Wesstron</span></aside><div class="role"><h3>QA Engineer</h3><p>Developing the testing framework for farm management solutions based on AWS cloud provider. I was responsible for maintaining the testing environment, scheduling and analysing test runs on AWS Pipeline, preparing and implementing new test cases in Cypress and conducting API testing with Postman.</p><ul><li>Tech stack: JavaScript + Cypress | MQTT | InfluxDB | AWS | TestRail | Postman</li><li>Test level: API | UI | System | Manual</li><li>Deployment: AWS CI/CD Pipeline</li><li>Cloud services: AWS (CodeCommit, Lambda, Pipeline, DynamoDB, CloudWatch, Cognito, IoT)</li><li>OS: Windows</li><li>Methodology: Agile - Scrum</li></ul></div></article>
+        </section>
+        <p class="consent">I agree to the processing of personal data provided in this document for realising the recruitment process pursuant to the Personal Data Protection Act of 10 May 2018 (Journal of Laws 2018, item 1000) and in agreement with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation). I also consent to processing of my personal data by (company name) for the purposes of any future recruitment processes.</p>
+      </section>
+      <section class="page page-two">
+        <section class="cv-section experience continuation">
+          <h2>Experience</h2>
+          <article class="timeline-row"><aside><strong>04.2019 - 11.2019</strong><span>Poznan supercomputing and networking center</span></aside><div class="role"><h3>Junior software developer / researcher</h3><p>Was a researcher in a project for P4 language for switch programming. I was evaluating efficiency for hash algorithms used for DDoS attacks mitigation.</p><ul><li>Switch hash algorithms implementation in dedicated P4 language</li><li>Tech stack: Linux, GitLab, P4, Docker, Python</li></ul></div></article>
+          <article class="timeline-row compact"><aside><strong>04.2019 - 11.2019</strong><span>Mikronika</span></aside><div class="role"><h3>Electronic Assembler / Communication System Tester</h3><p>Radio modules testing according to the technical documentation.</p></div></article>
+        </section>
+        <section class="cv-section other"><h2>Other<br />experience</h2><ul><li>TypeScript + Playwright - <a href="#">code sample</a></li><li>Java + RestAssured - <a href="#">code sample</a></li></ul></section>
+        <p class="consent">I agree to the processing of personal data provided in this document for realising the recruitment process pursuant to the Personal Data Protection Act of 10 May 2018 (Journal of Laws 2018, item 1000) and in agreement with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation). I also consent to processing of my personal data by (company name) for the purposes of any future recruitment processes.</p>
+      </section>
+    </main>
+  </body>
 </html>

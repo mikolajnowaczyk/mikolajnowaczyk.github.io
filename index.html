@@ -8,36 +8,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css?v=20260928" />
+    <link rel="stylesheet" href="style.css?v=20260929" />
   </head>
   <body>
-    <button class="print-button" type="button" onclick="window.print()">Download / print PDF</button>
+    <button class="print-button" type="button" onclick="window.print()">Download CV (PDF)</button>
     <main class="cv" aria-label="Curriculum vitae">
       <section class="page page-one">
         <header class="intro">
           <div class="identity">
             <h1>Mikołaj Nowaczyk</h1>
-            <p class="professional-title">Senior QA Automation Engineer | Software Development Engineer in Test</p>
+            <p class="professional-title">Senior QA Automation Engineer | SDET</p>
             <p class="specialization">C# &bull; Playwright &bull; xUnit &bull; API Automation &bull; Distributed Systems</p>
             <address>
               <span>Poland</span>
               <a href="tel:+48662542119">+48 662 542 119</a>
               <a href="mailto:mikolaj.nowaczyk95@gmail.com">mikolaj.nowaczyk95@gmail.com</a>
+              <a href="https://github.com/mikolajnowaczyk" target="_blank" rel="noopener noreferrer">github.com/mikolajnowaczyk</a>
             </address>
           </div>
         </header>
         <section class="cv-section summary">
           <h2>Professional Summary</h2>
-          <p>Senior QA Automation Engineer with 6+ years of experience in test automation and quality engineering across web, cloud, IoT and distributed systems. Currently focused on C#, Playwright, xUnit and REST API automation for a complex hospitality platform. Experienced in maintaining and improving automation frameworks, investigating failures across microservices, and driving automation priorities and test coverage. Applies AI-assisted QA workflows to requirements analysis, test design, coverage assessment, code review and automated failure investigation.</p>
+          <p>Senior QA Automation Engineer with 6+ years of experience in test automation and quality engineering across web, cloud, IoT and distributed systems. Specialises in C#, Playwright, xUnit and REST API automation. Owns automation priorities and coverage for the Inventory domain, maintains a framework supporting approximately 200 UI and API tests, and investigates failures across microservices, Kafka, PostgreSQL and observability tooling. Reduced automated test-suite runtime by 57% through fixture and execution-group redesign. Mentors junior engineers and uses AI-assisted workflows to accelerate analysis while independently validating the results.</p>
         </section>
         <section class="cv-section skills">
           <h2>Technical Skills</h2>
-          <div class="skill-row"><h3>Test Automation</h3><p>C#, Playwright, xUnit, REST API testing, UI and API automation, Page Object Model (POM), Component Objects, fixtures, test-data management, parallel test execution</p></div>
-          <div class="skill-row ai"><h3>AI-Assisted QA Engineering</h3><p>Kiro, requirements and epic analysis, test design and edge-case discovery, coverage assessment, merge-request review, automated failure investigation, bug and test-fix ticket preparation</p></div>
-          <div class="skill-row"><h3>Quality Engineering</h3><p>Automation framework maintenance and refactoring, test design, failure investigation, code review, coverage analysis</p></div>
-          <div class="skill-row"><h3>Distributed Systems &amp; Observability</h3><p>Microservices, Kafka, PostgreSQL, Kibana, Grafana, log and correlation-ID analysis</p></div>
-          <div class="skill-row"><h3>CI/CD, Cloud &amp; Environments</h3><p>Continuous Integration / Continuous Delivery (CI/CD), GitLab CI/CD, Git, Docker, WSL, Jenkins, AWS CodePipeline, AWS, Azure</p></div>
-          <div class="skill-row"><h3>Additional Automation Stack</h3><p>JavaScript, TypeScript, Cypress, TestCafe, Cucumber-JS, MQTT</p></div>
+          <div class="skill-row"><h3>Core Test Automation</h3><p>C#, Playwright, xUnit, REST API testing, UI and API automation, automation framework design and maintenance, Page Object Model, Component Objects, fixtures, test-data management, parallel test execution</p></div>
+          <div class="skill-row"><h3>Distributed Systems &amp; Failure Investigation</h3><p>Microservices, Kafka, PostgreSQL, Kibana, Grafana, application logs, correlation-ID analysis, nightly test-failure triage, initial production-issue analysis</p></div>
+          <div class="skill-row"><h3>Quality Engineering</h3><p>Automation prioritisation, coverage assessment, test design, framework refactoring, merge-request review, defect investigation, mentoring</p></div>
+          <div class="skill-row"><h3>CI/CD, Cloud &amp; Environments</h3><p>GitLab CI/CD, Jenkins, AWS CodePipeline, Git, Docker, WSL, AWS, Azure</p></div>
+          <div class="skill-row"><h3>Additional Automation Stack</h3><p>TypeScript, JavaScript, Cypress, TestCafe, Cucumber-JS, Postman, MQTT</p></div>
+          <div class="skill-row ai"><h3>AI-Assisted QA</h3><p>Requirements analysis, edge-case discovery, coverage assessment, code review and failure investigation using Kiro, with independent validation of generated results</p></div>
         </section>
         <section class="cv-section experience">
           <h2>Professional Experience</h2>
@@ -47,14 +48,14 @@
               <p class="position">Senior QA Engineer | Jun 2026 – Present</p>
               <p class="position">QA Engineer | Nov 2023 – May 2026</p>
             </div>
-            <p>Senior QA Engineer focused on quality engineering and test automation for the Inventory domain of a distributed hospitality platform.</p>
+            <p>Promoted to Senior QA Engineer in June 2026. Owns automation priorities, framework improvements, test coverage and failure investigation for the Inventory domain of a distributed hospitality platform.</p>
             <ul>
-              <li>Restructured test fixtures and execution groups to increase parallelism, reducing automated test-suite runtime from over 3.5 hours to approximately 1.5 hours — a reduction of about 57%.</li>
-              <li>Maintains and extends a C# / Playwright / xUnit automation framework supporting approximately 200 UI and backend API tests, including fixtures, seeders, API helpers, test-data contexts, Page Objects and Component Objects.</li>
-              <li>Owns automation priorities for the Inventory domain by assessing existing coverage, identifying automation opportunities and creating implementation tickets.</li>
-              <li>Investigates nightly automation failures and performs initial production-issue analysis using API responses, application behaviour, logs, correlation IDs, Kafka message flow, database state, Kibana and Grafana.</li>
-              <li>Uses Kiro for requirements and epic analysis, test design, coverage assessment, merge-request review, failure triage, and preparing bug and test-fix tickets.</li>
-              <li>Onboarded and mentors a Junior QA Engineer, assigns selected automation tasks, reviews delivered changes, and provides technical and domain support.</li>
+              <li>Reduced automated test-suite runtime from over 3.5 hours to approximately 1.5 hours — an improvement of about 57% — by redesigning test fixtures and execution groups to increase parallelism.</li>
+              <li>Maintains and evolves a C# / Playwright / xUnit automation framework supporting approximately 200 UI and backend API tests, including fixtures, seeders, API helpers, test-data contexts, Page Objects and Component Objects.</li>
+              <li>Owns the automation backlog for the Inventory domain by assessing existing coverage, identifying high-value automation opportunities and preparing implementation-ready tickets.</li>
+              <li>Investigates nightly automation failures and performs initial production-issue analysis across API responses, application behaviour, logs, correlation IDs, Kafka message flows, PostgreSQL data, Kibana and Grafana.</li>
+              <li>Reviews automation changes and mentors a Junior QA Engineer by assigning selected tasks, reviewing delivered work and providing technical and domain guidance.</li>
+              <li>Uses AI-assisted workflows to accelerate requirements analysis, test design, coverage assessment, merge-request review and failure triage, while independently validating the generated results.</li>
             </ul>
           </article>
         </section>
@@ -70,8 +71,7 @@
               <p class="client">Client assignment: Rockwell Automation</p>
             </div>
             <ul>
-              <li>Supported a short-term industrial IoT assignment involving Allen-Bradley ControlLogix devices, PLC-to-cloud communication, TypeScript, TestCafe, Cucumber-JS, MQTT and selected Azure services.</li>
-              <li>Completed internal development focused on software-testing fundamentals, Java and Selenium.</li>
+              <li>Contributed to quality engineering for an industrial IoT solution connecting Allen-Bradley ControlLogix devices with cloud services, using TypeScript, TestCafe, Cucumber-JS, MQTT and selected Azure components.</li>
             </ul>
           </article>
           <article class="experience-entry">
@@ -79,12 +79,12 @@
               <h3>Wesstron</h3>
               <p class="position">QA Engineer | Apr 2020 – Jan 2023</p>
             </div>
-            <p>Worked on test automation and test environments for AWS-based farm management and IoT systems.</p>
+            <p>Developed and maintained test automation and test environments for AWS-based farm-management and IoT systems.</p>
             <ul>
-              <li>Introduced the Page Object Model to an existing Cypress test suite, improving maintainability and reducing duplicated UI interaction logic.</li>
-              <li>Developed and maintained UI and API tests using JavaScript, Cypress and Postman.</li>
-              <li>Maintained test environments, scheduled and analysed automated test runs in AWS CodePipeline, and investigated failures using CloudWatch.</li>
-              <li>Used AWS Lambda for test-data setup and worked with MQTT, DynamoDB, Cognito, AWS IoT and other AWS services involved in tested workflows.</li>
+              <li>Refactored an existing Cypress test suite by introducing the Page Object Model, reducing duplicated UI interaction logic and improving maintainability.</li>
+              <li>Developed and maintained automated UI and REST API tests using JavaScript, Cypress and Postman.</li>
+              <li>Managed test execution in AWS CodePipeline and investigated automation failures using application logs and AWS CloudWatch.</li>
+              <li>Automated test-data setup using AWS Lambda and validated workflows involving MQTT, DynamoDB, Cognito, AWS IoT and other AWS services.</li>
             </ul>
           </article>
           <article class="experience-entry">
@@ -93,7 +93,7 @@
               <p class="position">Junior Software Developer / Researcher | Apr 2019 – Nov 2019</p>
             </div>
             <ul>
-              <li>Implemented and evaluated hash algorithms in P4 for programmable network switches as part of DDoS mitigation research.</li>
+              <li>Implemented and evaluated P4 hash algorithms for programmable network switches as part of DDoS-mitigation research.</li>
               <li>Worked with P4, Python, Linux, Docker and GitLab.</li>
             </ul>
           </article>
@@ -110,7 +110,6 @@
           <h2>Certifications</h2>
           <ul class="certification-list">
             <li>ISTQB Certified Tester – Foundation Level | 2023</li>
-            <li>ACERT English Certificate – B2 | 2020</li>
           </ul>
         </section>
         <p class="consent">I consent to the processing of my personal data contained in this CV by its recipient for the purposes of the current recruitment process and future recruitment processes conducted by the same recipient, in accordance with Regulation (EU) 2016/679 (GDPR).</p>

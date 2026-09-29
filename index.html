@@ -3,48 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="CV of Mikołaj Nowaczyk, QA Engineer." />
-    <title>Mikołaj Nowaczyk | QA Engineer</title>
+    <meta name="description" content="CV of Mikołaj Nowaczyk, Senior QA Automation Engineer and SDET." />
+    <title>Mikołaj Nowaczyk | Senior QA Automation Engineer / SDET</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css?v=20260826" />
+    <link rel="stylesheet" href="style.css?v=20260928" />
   </head>
   <body>
     <button class="print-button" type="button" onclick="window.print()">Download / print PDF</button>
     <main class="cv" aria-label="Curriculum vitae">
       <section class="page page-one">
         <header class="intro">
-          <img class="portrait" src="img/profile.jpg" alt="Mikołaj Nowaczyk" />
           <div class="identity">
             <h1>Mikołaj Nowaczyk</h1>
+            <p class="professional-title">Senior QA Automation Engineer | Software Development Engineer in Test</p>
+            <p class="specialization">C# &bull; Playwright &bull; xUnit &bull; API Automation &bull; Distributed Systems</p>
             <address>
-              <a href="tel:+48662542119"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.6 2.5h3l1.5 4.2-2 1.7c1.2 2.3 3 4.1 5.3 5.3l1.7-2 4.2 1.5v3c0 1-.8 1.8-1.8 1.8C9.7 18.5 5.5 14.3 5.5 5.5c0-1 .1-1.8 1.1-3Z" /></svg> +48 662 542 119</a>
-              <a href="mailto:mikolaj.nowaczyk95@gmail.com"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 5h18v14H3V5Zm2.1 2 6.9 5.4L18.9 7H5.1Zm13.8 10V9.5L12 14.8 5.1 9.5V17h13.8Z" /></svg> mikolaj.nowaczyk95@gmail.com</a>
-              <span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m2 11 10-8 10 8v10h-7v-6h-6v6H2V11Zm3 8h2v-6h10v6h2v-7L12 6.4 5 12v7Z" /></svg> Bydgoszcz, Poland</span>
+              <span>Poland</span>
+              <a href="tel:+48662542119">+48 662 542 119</a>
+              <a href="mailto:mikolaj.nowaczyk95@gmail.com">mikolaj.nowaczyk95@gmail.com</a>
             </address>
           </div>
         </header>
-        <section class="cv-section education">
-          <h2>Education</h2>
-          <div class="timeline-row"><aside><strong>2014 - 2020</strong><span>Poznań University of Technology</span></aside><div><ul><li>M.Sc. Automation and Robotics; science article co-author: <a href="#">LINK</a></li><li>English - B2 level - ACERT certification</li><li>ISTQB - Foundation Level</li></ul></div></div>
+        <section class="cv-section summary">
+          <h2>Professional Summary</h2>
+          <p>Senior QA Automation Engineer with 6+ years of experience in test automation and quality engineering across web, cloud, IoT and distributed systems. Currently focused on C#, Playwright, xUnit and REST API automation for a complex hospitality platform. Experienced in maintaining and improving automation frameworks, investigating failures across microservices, and driving automation priorities and test coverage. Applies AI-assisted QA workflows to requirements analysis, test design, coverage assessment, code review and automated failure investigation.</p>
+        </section>
+        <section class="cv-section skills">
+          <h2>Technical Skills</h2>
+          <div class="skill-row"><h3>Test Automation</h3><p>C#, Playwright, xUnit, REST API testing, UI and API automation, Page Object Model (POM), Component Objects, fixtures, test-data management, parallel test execution</p></div>
+          <div class="skill-row ai"><h3>AI-Assisted QA Engineering</h3><p>Kiro, requirements and epic analysis, test design and edge-case discovery, coverage assessment, merge-request review, automated failure investigation, bug and test-fix ticket preparation</p></div>
+          <div class="skill-row"><h3>Quality Engineering</h3><p>Automation framework maintenance and refactoring, test design, failure investigation, code review, coverage analysis</p></div>
+          <div class="skill-row"><h3>Distributed Systems &amp; Observability</h3><p>Microservices, Kafka, PostgreSQL, Kibana, Grafana, log and correlation-ID analysis</p></div>
+          <div class="skill-row"><h3>CI/CD, Cloud &amp; Environments</h3><p>Continuous Integration / Continuous Delivery (CI/CD), GitLab CI/CD, Git, Docker, WSL, Jenkins, AWS CodePipeline, AWS, Azure</p></div>
+          <div class="skill-row"><h3>Additional Automation Stack</h3><p>JavaScript, TypeScript, Cypress, TestCafe, Cucumber-JS, MQTT</p></div>
         </section>
         <section class="cv-section experience">
-          <h2>Experience</h2>
-          <article class="timeline-row employer"><aside><strong>06.2026 - currently</strong><strong>11.2023 - 05.2026</strong><span>Shiji Poland</span></aside><div class="role"><div class="role-history"><h3>Senior QA Engineer</h3><h3>QA Engineer</h3></div><p>Promoted to Senior QA Engineer in June 2026. Continuing work in the inventory team for a hospitality industry product with 6 people in an Agile methodology. Our product provides a solution for hotel chains management.</p><ul><li>Tech stack: C# + Playwright + SpecFlow | PostgreSQL | AWS | GitLab | TestRail</li><li>Test level: Component | UI | System | Manual</li><li>Deployment: Internal QA app - CI/CD Pipeline</li><li>OS / Env: Windows + WSL + Docker</li><li>Methodology: Agile</li></ul></div></article>
-          <article class="timeline-row"><aside><strong>02.2023 - 10.2023</strong><span>Sii Poland<br />Rockwell Automation<br />(client)</span></aside><div class="role"><h3>Test development engineer</h3><p>Working with a 15-person team on IoT solutions for the industrial sector. The solution included Rockwell Automation communication with various devices like PLCs to send data to a cloud or other endpoint in the form of a predefined model.</p><ul><li>Tech stack: TypeScript + TestCafe + Cucumber-JS | MSSQL | MQTT | InfluxDB | Azure | GitLab</li><li>Test level: Component | UI | System | Manual</li><li>Deployment: Jenkins CI/CD Pipeline</li><li>Cloud services: Azure (Key Vault, App Config, Storage, Cache for Redis, SQL, IoT Hub, Event Grid)</li><li>OS / Env: Windows + VMware | Allen-Bradley Hardware (e.g. ControlLogix PLC)</li><li>Methodology: Agile (SAFe + Kanban)</li></ul></div></article>
-          <article class="timeline-row"><aside><strong>04.2020 - 01.2023</strong><span>Wesstron</span></aside><div class="role"><h3>QA Engineer</h3><p>Developing the testing framework for farm management solutions based on AWS cloud provider. I was responsible for maintaining the testing environment, scheduling and analysing test runs on AWS Pipeline, preparing and implementing new test cases in Cypress and conducting API testing with Postman.</p><ul><li>Tech stack: JavaScript + Cypress | MQTT | InfluxDB | AWS | TestRail | Postman</li><li>Test level: API | UI | System | Manual</li><li>Deployment: AWS CI/CD Pipeline</li><li>Cloud services: AWS (CodeCommit, Lambda, Pipeline, DynamoDB, CloudWatch, Cognito, IoT)</li><li>OS: Windows</li><li>Methodology: Agile - Scrum</li></ul></div></article>
+          <h2>Professional Experience</h2>
+          <article class="experience-entry employer">
+            <div class="experience-heading">
+              <h3>Shiji Poland</h3>
+              <p class="position">Senior QA Engineer | Jun 2026 – Present</p>
+              <p class="position">QA Engineer | Nov 2023 – May 2026</p>
+            </div>
+            <p>Senior QA Engineer focused on quality engineering and test automation for the Inventory domain of a distributed hospitality platform.</p>
+            <ul>
+              <li>Restructured test fixtures and execution groups to increase parallelism, reducing automated test-suite runtime from over 3.5 hours to approximately 1.5 hours — a reduction of about 57%.</li>
+              <li>Maintains and extends a C# / Playwright / xUnit automation framework supporting approximately 200 UI and backend API tests, including fixtures, seeders, API helpers, test-data contexts, Page Objects and Component Objects.</li>
+              <li>Owns automation priorities for the Inventory domain by assessing existing coverage, identifying automation opportunities and creating implementation tickets.</li>
+              <li>Investigates nightly automation failures and performs initial production-issue analysis using API responses, application behaviour, logs, correlation IDs, Kafka message flow, database state, Kibana and Grafana.</li>
+              <li>Uses Kiro for requirements and epic analysis, test design, coverage assessment, merge-request review, failure triage, and preparing bug and test-fix tickets.</li>
+              <li>Onboarded and mentors a Junior QA Engineer, assigns selected automation tasks, reviews delivered changes, and provides technical and domain support.</li>
+            </ul>
+          </article>
         </section>
-        <p class="consent">I agree to the processing of personal data provided in this document for realising the recruitment process pursuant to the Personal Data Protection Act of 10 May 2018 (Journal of Laws 2018, item 1000) and in agreement with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation). I also consent to processing of my personal data by (company name) for the purposes of any future recruitment processes.</p>
+        <p class="consent">I consent to the processing of my personal data contained in this CV by its recipient for the purposes of the current recruitment process and future recruitment processes conducted by the same recipient, in accordance with Regulation (EU) 2016/679 (GDPR).</p>
       </section>
       <section class="page page-two">
         <section class="cv-section experience continuation">
-          <h2>Experience</h2>
-          <article class="timeline-row"><aside><strong>04.2019 - 11.2019</strong><span>Poznan supercomputing and networking center</span></aside><div class="role"><h3>Junior software developer / researcher</h3><p>Was a researcher in a project for P4 language for switch programming. I was evaluating efficiency for hash algorithms used for DDoS attacks mitigation.</p><ul><li>Switch hash algorithms implementation in dedicated P4 language</li><li>Tech stack: Linux, GitLab, P4, Docker, Python</li></ul></div></article>
-          <article class="timeline-row compact"><aside><strong>04.2019 - 11.2019</strong><span>Mikronika</span></aside><div class="role"><h3>Electronic Assembler / Communication System Tester</h3><p>Radio modules testing according to the technical documentation.</p></div></article>
+          <h2>Professional Experience</h2>
+          <article class="experience-entry">
+            <div class="experience-heading">
+              <h3>Sii Poland</h3>
+              <p class="position">Test Development Engineer | Feb 2023 – Oct 2023</p>
+              <p class="client">Client assignment: Rockwell Automation</p>
+            </div>
+            <ul>
+              <li>Supported a short-term industrial IoT assignment involving Allen-Bradley ControlLogix devices, PLC-to-cloud communication, TypeScript, TestCafe, Cucumber-JS, MQTT and selected Azure services.</li>
+              <li>Completed internal development focused on software-testing fundamentals, Java and Selenium.</li>
+            </ul>
+          </article>
+          <article class="experience-entry">
+            <div class="experience-heading">
+              <h3>Wesstron</h3>
+              <p class="position">QA Engineer | Apr 2020 – Jan 2023</p>
+            </div>
+            <p>Worked on test automation and test environments for AWS-based farm management and IoT systems.</p>
+            <ul>
+              <li>Introduced the Page Object Model to an existing Cypress test suite, improving maintainability and reducing duplicated UI interaction logic.</li>
+              <li>Developed and maintained UI and API tests using JavaScript, Cypress and Postman.</li>
+              <li>Maintained test environments, scheduled and analysed automated test runs in AWS CodePipeline, and investigated failures using CloudWatch.</li>
+              <li>Used AWS Lambda for test-data setup and worked with MQTT, DynamoDB, Cognito, AWS IoT and other AWS services involved in tested workflows.</li>
+            </ul>
+          </article>
+          <article class="experience-entry">
+            <div class="experience-heading">
+              <h3>Poznań Supercomputing and Networking Center (PSNC)</h3>
+              <p class="position">Junior Software Developer / Researcher | Apr 2019 – Nov 2019</p>
+            </div>
+            <ul>
+              <li>Implemented and evaluated hash algorithms in P4 for programmable network switches as part of DDoS mitigation research.</li>
+              <li>Worked with P4, Python, Linux, Docker and GitLab.</li>
+            </ul>
+          </article>
         </section>
-        <section class="cv-section other"><h2>Other<br />experience</h2><ul><li>TypeScript + Playwright - <a href="#">code sample</a></li><li>Java + RestAssured - <a href="#">code sample</a></li></ul></section>
-        <p class="consent">I agree to the processing of personal data provided in this document for realising the recruitment process pursuant to the Personal Data Protection Act of 10 May 2018 (Journal of Laws 2018, item 1000) and in agreement with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation). I also consent to processing of my personal data by (company name) for the purposes of any future recruitment processes.</p>
+        <section class="cv-section education">
+          <h2>Education</h2>
+          <article class="education-entry">
+            <h3>Poznań University of Technology</h3>
+            <p class="qualification">M.Sc. in Automation and Robotics | 2014 – 2020</p>
+            <p>Co-author of <a href="https://link.springer.com/article/10.1007/s10846-021-01476-1" target="_blank" rel="noopener noreferrer">3D Dense Mapping with the Graph of Keyframe-Based and View-Dependent Local Maps</a> (Springer, 2021); integrated the local mapping system with ORB-SLAM2.</p>
+          </article>
+        </section>
+        <section class="cv-section certifications">
+          <h2>Certifications</h2>
+          <ul class="certification-list">
+            <li>ISTQB Certified Tester – Foundation Level | 2023</li>
+            <li>ACERT English Certificate – B2 | 2020</li>
+          </ul>
+        </section>
+        <p class="consent">I consent to the processing of my personal data contained in this CV by its recipient for the purposes of the current recruitment process and future recruitment processes conducted by the same recipient, in accordance with Regulation (EU) 2016/679 (GDPR).</p>
       </section>
     </main>
   </body>
